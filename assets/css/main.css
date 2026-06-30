@@ -195,7 +195,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Lora", serif;
-		font-weight: 300;
+		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 		letter-spacing: -0.025em;
@@ -207,34 +207,34 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: calc(2.5em + 4pt);
+		font-size: calc(2.5em + 6pt);
 		line-height: 1.2;
 	}
 
 	h2 {
-		font-size: calc(1.5em + 4pt);
+		font-size: calc(1.5em + 6pt);
 	}
 
 	h3 {
-		font-size: calc(1.25em + 4pt);
+		font-size: calc(1.25em + 6pt);
 	}
 
 	h4 {
-		font-size: calc(1.1em + 4pt);
+		font-size: calc(1.1em + 6pt);
 	}
 
 	h5 {
-		font-size: calc(0.9em + 4pt);
+		font-size: calc(0.9em + 6pt);
 	}
 
 	h6 {
-		font-size: calc(0.7em + 4pt);
+		font-size: calc(0.7em + 6pt);
 	}
 
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: calc(2em + 4pt);
+			font-size: calc(2em + 6pt);
 		}
 
 	}
@@ -2642,7 +2642,7 @@ input, select, textarea {
 	}
 
 		header.major h2 {
-			font-size: calc(2em + 4pt);
+			font-size: calc(2em + 6pt);
 		}
 
 			header.major h2:after {
@@ -2684,7 +2684,7 @@ input, select, textarea {
 		}
 
 			header.major h2 {
-				font-size: calc(1.5em + 4pt);
+				font-size: calc(1.5em + 6pt);
 			}
 
 			header.major p {
@@ -3091,7 +3091,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				font-size: calc(3.25em + 4pt);
+				font-size: calc(3.25em + 6pt);
 			}
 
 			#header.alt > * {
@@ -3169,7 +3169,7 @@ input, select, textarea {
 				}
 
 					#header.alt h1 {
-						font-size: calc(2.5em + 4pt);
+						font-size: calc(2.5em + 6pt);
 					}
 
 		}
