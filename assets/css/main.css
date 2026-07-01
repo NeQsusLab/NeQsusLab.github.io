@@ -3835,12 +3835,12 @@ input, select, textarea {
 
 /* Individual Logo Styles */
 .logo-left {
-    height: 160px; /* Increase this number to make the LEFT logo bigger */
+    height: 200px; /* Increase this number to make the LEFT logo bigger */
     width: auto;
 }
 
 .logo-right {
-    height: 90px; /* Decrease this number to make the RIGHT logo smaller */
+    height: 70px; /* Decrease this number to make the RIGHT logo smaller */
     width: auto;
 }
 
