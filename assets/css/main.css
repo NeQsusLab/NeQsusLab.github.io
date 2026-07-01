@@ -3883,3 +3883,14 @@ input, select, textarea {
     max-width: 75em; 
     margin: 0 auto; 
 }
+
+
+/* --- FORCE ALL TEXT TO DARK BLACK --- */
+body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
+    color: #000000 !important;
+}
+
+/* Ensure placeholder text in forms is also dark but slightly lighter so it looks like a placeholder */
+::placeholder {
+    color: #333333 !important;
+}
