@@ -3819,3 +3819,37 @@ input, select, textarea {
 			}
 
 		}
+
+/* Dual Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 4em; /* Adjust this to change the margin from the screen edges */
+    box-sizing: border-box;
+}
+
+/* Individual Logo Styles */
+.logo-left, .logo-right {
+    height: 80px; /* Adjust this height to match your desired logo size */
+    width: auto;
+}
+
+/* Optional: If you want to force specific spacing */
+.logo-left {
+    margin-left: 2em;
+}
+
+.logo-right {
+    margin-right: 2em;
+}
+
+/* Responsive adjustment for smaller screens */
+@media screen and (max-width: 736px) {
+    .logo-container {
+        padding: 0 1em;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
