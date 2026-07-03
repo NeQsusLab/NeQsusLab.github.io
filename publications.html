@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Publications - NeQsus Lab</title>
@@ -50,20 +55,41 @@
 				color: #444444;
 			}
 			
-			/* Extra notes like [Selected as journal cover] */
+			/* Standard notes */
 			.pub-notes {
 				display: block;
 				color: #555555;
 				font-size: 0.9em;
 				margin-top: 0.3em;
 			}
+
+			/* Special Highlight Notes (Light blue, italic) */
+			.special-note {
+				display: block;
+				color: #4fa3d1; /* Light Blue */
+				font-style: italic;
+				font-size: 0.9em;
+				margin-top: 0.4em;
+			}
+			/* Overrides for hyperlinks inside the special notes */
+			.special-note a {
+				color: #0033a0 !important; /* Dark Blue */
+				font-style: normal !important; /* Not italic by default */
+				text-decoration: none !important;
+				border-bottom: none !important;
+			}
+			.special-note a:hover {
+				color: #8a2be2 !important; /* Transitions to purple on hover */
+			}
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<div id="wrapper">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-				<header id="header" class="alt">
+				<!-- Header with Dual Logos -->
+					<header id="header" class="alt">
 						<div class="logo-container">
 							<img src="images/logo.png" alt="Lab Logo" class="logo-left" />
 							<img src="images/Name_research.png" alt="Research Logo" class="logo-right" />
@@ -71,7 +97,8 @@
 						<h1></h1>
 					</header>
 
-				<nav id="nav">
+				<!-- Nav -->
+					<nav id="nav">
 						<ul>
 							<li><a href="index.html">About</a></li>
 							<li><a href="research.html">Research</a></li>
@@ -82,9 +109,11 @@
 						</ul>
 					</nav>
 
-				<div id="main">
+				<!-- Main Content Area -->
+					<div id="main">
 
-						<section class="main">
+						<!-- Publications Section -->
+							<section class="main">
 								<header class="major align-left">
 									<h2>List of journal publications</h2>
 								</header>
@@ -98,7 +127,8 @@
 									<li>
 										<a href="https://opg.optica.org/opticaq/fulltext.cfm?uri=opticaq-3-2-119" target="_blank" class="pub-title">Nonlinear interferometry-based metrology of magneto-optical properties at infrared wavelengths</a>
 										<span class="pub-authors">T. Chakraborty, T. Produit, H. N S Krishnamoorthy, C. Soci and A. V. Paterova</span>
-										<span class="pub-journal">Optica Quantum 3 (2), 119-128 (2025) [Optica Publishing Group]. [Selected as journal cover]</span>
+										<span class="pub-journal">Optica Quantum 3 (2), 119-128 (2025) [Optica Publishing Group].</span>
+										<span class="special-note">[Selected as journal cover]</span>
 									</li>
 									<li>
 										<a href="https://doi.org/10.1038/s41534-024-00946-2" target="_blank" class="pub-title">Towards a spectrally multiplexed quantum repeater</a>
@@ -118,7 +148,8 @@
 									<li>
 										<a href="https://doi.org/10.1021/acsanm.3c05491" target="_blank" class="pub-title">Photoluminescence of Germanium-Vacancy Centers in Nanocrystalline Diamond Films: Implications for Quantum Sensing Applications</a>
 										<span class="pub-authors">R. M. Joy, P. Pobedinskas, E. Bourgeois, T. Chakraborty, J. Görlitz, D. Herrmann, C. Noël, J. Heupel, D. Jannis, N. Gauquelin, J. D’Haen, J. Verbeeck, C. Popov, L. Houssiau, C. Becher, M. Nesládek, and K. Haenen</span>
-										<span class="pub-journal">ACS Appl. Nano Mater. 7 (4), 3873-3884 (2024) [American Chemical Society]. [Selected as journal cover]</span>
+										<span class="pub-journal">ACS Appl. Nano Mater. 7 (4), 3873-3884 (2024) [American Chemical Society].</span>
+										<span class="special-note">[Selected as journal cover]</span>
 									</li>
 									<li>
 										<a href="https://doi.org/10.1016/j.sctalk.2023.100157" target="_blank" class="pub-title">Germanium vacancy centre formation in CVD nanocrystalline diamond using a solid dopant source</a>
@@ -154,7 +185,10 @@
 										<a href="https://doi.org/10.1103/PhysRevMaterials.3.065205" target="_blank" class="pub-title">CVD-growth of ultrapure diamond, generation of NV centers by ion-implantation, and their spectroscopic characterization for quantum technological applications</a>
 										<span class="pub-authors">T. Chakraborty, F. Lehmann, J. Zhang, N. Wöhrl, R. Remfort, S. Borgsdorf, U. Köhler, V. Buck and D. Suter</span>
 										<span class="pub-journal">Phys. Rev. Materials 3, 065205 (2019) [American Physical Society].</span>
-										<span class="pub-notes">[Press-release by Technical University of Dortmund, Ruhr-universiteit, Bochum and Universität Duisburg-Essen, Highlighted in the ‘Outline’ section of Nature: Nature 591 S38 (2021)]</span>
+										<span class="special-note">
+											Press-release by <a href="https://www.tu-dortmund.de/nachrichtendetail/ua-ruhr-physiker-betreiben-grundlagenforschung-mit-diamanten-1691/" target="_blank">Technical University of Dortmund</a>, <a href="https://news.rub.de/wissenschaft/2019-07-08-physik-mit-diamanten-zu-quantencomputern-und-minisensoren" target="_blank">Ruhr-universiteit, Bochum</a> and <a href="https://www.uni-due.de/2019-07-08-grundlagenforschung-diamanten" target="_blank">Universität Duisburg-Essen</a>.<br />
+											Highlighted in the ‘Outline’ section of <a href="https://www.nature.com/articles/d41586-021-00743-3" target="_blank">Nature</a>.
+										</span>
 									</li>
 									<li>
 										<a href="https://doi.org/10.1088/1367-2630/aa7727" target="_blank" class="pub-title">Polarizing the electronic and nuclear spin of the NV-center in diamond in arbitrary magnetic fields: Analysis of the optical pumping process</a>
@@ -195,7 +229,7 @@
 										<a href="https://doi.org/10.1088/1367-2630/15/11/113001" target="_blank" class="pub-title">Experimental quantification of entanglement through heat capacity</a>
 										<span class="pub-authors">H. Singh, T. Chakraborty, D. Das, J. Hirale, Y. Tokiwa, P. Gegenwart, and C. Mitra</span>
 										<span class="pub-journal">New J. Phys. 15, 113001 (2013) ‎[IOP Publishing‎ (UK)].</span>
-										<span class="pub-notes">[Highlighted in the 'Commentary' section of Nature Physics: Quantum entanglement, Vlatko Vedral, Nature Physics 10, 256 (2014)]</span>
+										<span class="special-note">Highlighted in the 'News &amp; Views' section of <a href="https://www.nature.com/articles/nphys3249" target="_blank" style="font-style: italic !important;">Nature Physics</a>.</span>
 									</li>
 									<li>
 										<a href="https://doi.org/10.1063/1.4862402" target="_blank" class="pub-title">Signature of quantum entanglement in NH4CuPO4•H2O</a>
@@ -216,6 +250,7 @@
 										<a href="https://doi.org/10.1088/1367-2630/15/1/013047" target="_blank" class="pub-title">Experimental detection of quantum information sharing and its quantification in quantum spin systems</a>
 										<span class="pub-authors">D. Das, H. Singh, T. Chakraborty, C. Mitra</span>
 										<span class="pub-journal">New J. Phys. 15, 013047 (2013) ‎[IOP Publishing‎ (UK)].</span>
+										<span class="special-note">Highlighted in the 'News &amp; Views' section of <a href="https://www.nature.com/articles/nphys3249" target="_blank" style="font-style: italic !important;">Nature Physics</a>.</span>
 									</li>
 									<li>
 										<a href="https://doi.org/10.1016/j.physleta.2012.09.023" target="_blank" class="pub-title">Quantification of entanglement from magnetic susceptibility for a Heisenberg spin ½ system</a>
@@ -233,13 +268,15 @@
 
 					</div>
 
-				<footer id="footer">
+				<!-- Clean Footer -->
+					<footer id="footer">
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
