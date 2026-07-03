@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>About - NeQsus Lab</title>
@@ -11,27 +6,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* CSS to neatly align the RRI logo and text */
+			.rri-block {
+				display: flex;
+				gap: 2em;
+				align-items: flex-start;
+			}
+			.rri-logo {
+				width: 140px; /* Adjust this number if you want the logo bigger or smaller */
+				flex-shrink: 0;
+				margin-top: 0.5em; /* Aligns the top of the image nicely with the heading */
+			}
+			
+			/* Forces the email link to be dark blue without the dotted underline */
+			.email-link {
+				color: #0033a0 !important;
+				text-decoration: none !important;
+				border-bottom: none !important;
+				font-weight: bold;
+			}
+			.email-link:hover {
+				color: #8a2be2 !important; /* Transitions to purple when hovered */
+			}
+
+			/* Mobile Responsiveness: Stacks the image and text on small screens */
+			@media screen and (max-width: 736px) {
+				.rri-block {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+				}
+				.rri-logo {
+					margin-bottom: 1em;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header with Dual Logos -->
-					<header id="header" class="alt">
+				<header id="header" class="alt">
 						<div class="logo-container">
-							<!-- Left Logo -->
 							<img src="images/logo.png" alt="Lab Logo" class="logo-left" />
-							<!-- Right Logo -->
 							<img src="images/Name_research.png" alt="Research Logo" class="logo-right" />
 						</div>
 						<h1></h1>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
+				<nav id="nav">
 						<ul>
-							<li><a href="index.html">About</a></li>
+							<li><a href="index.html" class="active">About</a></li>
 							<li><a href="research.html">Research</a></li>
 							<li><a href="publications.html">Publications</a></li>
 							<li><a href="team.html">Team</a></li>
@@ -40,11 +66,9 @@
 						</ul>
 					</nav>
 
-				<!-- Main Content Area -->
-					<div id="main">
+				<div id="main">
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
+						<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -58,81 +82,31 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/pic01.jpg" alt="NeQsus Lab Cover" loading="lazy" /></span>
 								</div>
 							</section>
 
-						<!-- 2-Column Info Section -->
-							<section class="main">
+						<section class="main">
 								<div class="row">
-									<!-- Left Column (RRI Info) -->
 									<div class="col-6 col-12-medium">
-										<header class="major">
-											<!-- Font size reduced by exactly 2pt to match the right column -->
-											<h2 style="font-size: calc(1.75em - 2pt);">We are in RRI Bengaluru</h2>
-										</header>
-										<p>The Raman Research Institute (RRI), an autonomous institute funded by the Government of India, is a premier center dedicated to research in the basic sciences. Further information about the Institute, its research areas, and other details may be found through the link below</p>
-										<ul class="actions">
-											<li><a href="https://www.rri.res.in/" target="_blank" class="button">More</a></li>
-										</ul>
+										<div class="rri-block">
+											<img src="images/RRI_Logo.png" alt="RRI Logo" class="rri-logo" />
+											
+											<div>
+												<header class="major">
+													<h2 style="font-size: calc(1.75em - 2pt);">We are in RRI Bengaluru</h2>
+												</header>
+												<p>The Raman Research Institute (RRI), an autonomous institute funded by the Government of India, is a premier center dedicated to research in the basic sciences. Further information about the Institute, its research areas, and other details may be found through the link below.</p>
+												<ul class="actions">
+													<li><a href="https://www.rri.res.in/" target="_blank" class="button">More</a></li>
+												</ul>
+											</div>
+										</div>
 									</div>
 									
-									<!-- Right Column (Contact Info) -->
 									<div class="col-6 col-12-medium">
 										<header class="major">
-											<!-- Font size reduced by exactly 2pt -->
 											<h2 style="font-size: calc(1.75em - 2pt);">Contact us</h2>
 										</header>
 										
-										<!-- PI Information -->
-										<p style="margin-top: -1em; margin-bottom: 1.5em; line-height: 1.6;">
-											<strong>Dr. Tanmoy Chakraborty,</strong><br />
-											PI of NeQsus Lab,<br />
-											Associate Professor,<br />
-											Light and Matter Physics Division,<br />
-											Raman Research Institute,
-										</p>
-
-										<dl class="alt">
-											<dt>Address</dt>
-											<dd>C. V. Raman Avenue, Sadashivanagar,<br />Bengaluru - 560 080 India.</dd>
-											
-											<dt>Email</dt>
-											<dd><a href="mailto:tanmoy@rri.res.in">tanmoy@rri.res.in</a></dd>
-											
-											<dt>RRI webpage</dt>
-											<!-- word-break ensures the long URL wraps nicely instead of breaking the box -->
-											<dd><a href="https://www.rri.res.in/people/faculty/tanmoy-chakraborty" target="_blank" style="word-break: break-all;">https://www.rri.res.in/people/faculty/tanmoy-chakraborty</a></dd>
-										</dl>
-
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Clean Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+										<p style="margin-top: -1em; margin-bottom
