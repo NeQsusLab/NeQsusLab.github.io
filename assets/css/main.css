@@ -3919,3 +3919,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, ul, li, dt, dd, .content, .major {
 #navPanel {
     background: #1a1a1a !important; 
 }
+
+
+/* --- FORCE PURE WHITE BACKGROUND ON MAIN CONTENT --- */
+#main {
+    background-color: #ffffff !important;
+}
+
+/* Ensure the individual sections inside main also have a transparent or white background so they don't override it */
+#main > .main {
+    background-color: transparent !important;
+}
