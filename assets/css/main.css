@@ -3969,27 +3969,26 @@ body {
 
 
 
-
-/* --- CUSTOM TEXT BANNER (ELEGANT MINIMALIST AESTHETIC) --- */
+/* --- CUSTOM TEXT BANNER (RIGHT-ALIGNED & BOLDER) --- */
 #header .logo-container {
     display: none !important; 
 }
 
-/* Adds breathing room around the text, matching the spacious Cambridge banner */
+/* Adds breathing room around the text */
 #header {
     padding: 6em 2em 6em 2em !important; 
     background-color: transparent !important; 
 }
 
 #header h1.site-title {
-    /* Uses a clean, premium sans-serif stack matching modern academic sites */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 3.2em !important; 
-    font-weight: 300 !important; /* The secret to the look: a very thin, elegant font weight */
+    font-weight: 600 !important; /* Changed from 300 to 600 to make it noticeably bolder */
     color: #ffffff !important; 
-    letter-spacing: 0.05em !important; /* Slight spacing for readability and style */
-    margin: 0 auto !important;
-    text-shadow: none !important; /* Completely removed the ugly drop shadow */
+    letter-spacing: 0.05em !important; 
+    margin: 0 !important; /* Removed the auto-centering margin */
+    text-align: right !important; /* Forces the text to the right side */
+    text-shadow: none !important; 
     text-transform: none !important;
     border-bottom: none !important;
 }
@@ -4001,7 +4000,7 @@ body {
     }
     #header h1.site-title {
         font-size: 1.8em !important;
-        font-weight: 400 !important; /* Slightly thicker on tiny screens for readability */
+        font-weight: 700 !important; /* Slightly thicker on tiny screens */
+        text-align: right !important; /* Ensures it stays on the right on phones too */
     }
 }
-
