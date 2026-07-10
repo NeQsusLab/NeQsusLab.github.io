@@ -3968,26 +3968,40 @@ body {
 }
 
 
-/* --- CUSTOM TEXT BANNER (REPLACING LOGOS) --- */
+
+
+/* --- CUSTOM TEXT BANNER (ELEGANT MINIMALIST AESTHETIC) --- */
 #header .logo-container {
-    display: none !important; /* Failsafe to hide the old logos */
+    display: none !important; 
+}
+
+/* Adds breathing room around the text, matching the spacious Cambridge banner */
+#header {
+    padding: 6em 2em 6em 2em !important; 
+    background-color: transparent !important; 
 }
 
 #header h1.site-title {
-    font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-    font-size: 3.5em !important; /* Big, commanding font size */
-    font-weight: 400 !important; /* Clean, modern academic weight */
-    color: #ffffff !important; /* Crisp white */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6) !important; /* Subtle shadow for readability over the image */
-    letter-spacing: 1px !important;
+    /* Uses a clean, premium sans-serif stack matching modern academic sites */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 3.2em !important; 
+    font-weight: 300 !important; /* The secret to the look: a very thin, elegant font weight */
+    color: #ffffff !important; 
+    letter-spacing: 0.05em !important; /* Slight spacing for readability and style */
     margin: 0 auto !important;
-    text-transform: none !important; 
+    text-shadow: none !important; /* Completely removed the ugly drop shadow */
+    text-transform: none !important;
     border-bottom: none !important;
 }
 
-/* Make sure it scales down nicely on mobile phones */
+/* Scales gracefully for mobile screens */
 @media screen and (max-width: 736px) {
+    #header {
+        padding: 3em 1em 3em 1em !important;
+    }
     #header h1.site-title {
-        font-size: 2em !important;
+        font-size: 1.8em !important;
+        font-weight: 400 !important; /* Slightly thicker on tiny screens for readability */
     }
 }
+
