@@ -4004,3 +4004,13 @@ body {
         text-align: right !important; /* Ensures it stays on the right on phones too */
     }
 }
+
+
+/* --- GLOBAL FONT UPDATE (MATCHING BANNER) --- */
+body, 
+h1, h2, h3, h4, h5, h6, 
+p, a:not(.icon), li, dt, dd, 
+span:not(.icon):not(.image), 
+input, select, textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
