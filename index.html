@@ -4,7 +4,7 @@
 		<title>About - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=5" />
+		<link rel="stylesheet" href="assets/css/main.css?v=6" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.rri-block {
@@ -27,30 +27,33 @@
 				color: #8a2be2 !important;
 			}
 			
-			/* --- CUSTOM CIRCULAR ABOUT IMAGE (2x LARGER, NO BORDERS) --- */
+			/* --- CUSTOM CIRCULAR ABOUT IMAGE (DOUBLED IN SIZE) --- */
 			.spotlight .image.custom-profile-img {
-				width: 350px !important; /* Enlarged by roughly 2x */
-				height: 350px !important;
-				border: none !important; /* Removes template border */
-				background: transparent !important; /* Removes grey circle background */
+				width: 700px !important;  /* Doubled from 350px */
+				height: 700px !important; /* Doubled from 350px */
+				border: none !important; 
+				background: transparent !important; 
 				box-shadow: none !important;
 				padding: 0 !important;
-				border-radius: 50% !important; /* Forces circular container */
+				border-radius: 50% !important; 
 				overflow: hidden !important;
-				margin: 0 0 0 3em !important; /* Adds some breathing room between text and image */
+				margin: 0 0 0 3em !important; 
+				flex-shrink: 0 !important; /* Prevents the text from squishing the image */
 			}
 			.spotlight .image.custom-profile-img img {
 				width: 100% !important;
 				height: 100% !important;
-				object-fit: cover !important; /* Crops image cleanly into the circle */
+				object-fit: cover !important; 
 				border-radius: 50% !important; 
 			}
 
 			@media screen and (max-width: 980px) {
 				.spotlight .image.custom-profile-img {
-					width: 250px !important;
-					height: 250px !important;
-					margin: 2em auto !important; /* Centers image on mobile screens */
+					width: 500px !important;  /* Doubled from 250px */
+					height: 500px !important; /* Doubled from 250px */
+					margin: 2em auto !important; 
+					max-width: 90vw !important; /* Prevents it from breaking very small phone screens */
+					max-height: 90vw !important;
 				}
 			}
 			
