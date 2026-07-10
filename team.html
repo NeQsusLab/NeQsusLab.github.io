@@ -6,6 +6,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css?v=7" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.align-left { text-align: left !important; }
+			header.major.align-left::after { margin-left: 0 !important; }
+			
+			/* Clean layout for team members */
+			.team-member {
+				display: flex;
+				gap: 2em;
+				margin-bottom: 3em;
+				align-items: center;
+			}
+			.team-photo {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				object-fit: cover;
+				flex-shrink: 0;
+				border: 3px solid #0033a0; /* Optional: adds a nice blue ring around team photos */
+			}
+			.team-info h3 {
+				margin-bottom: 0.2em;
+				color: #0033a0 !important;
+				border-bottom: none !important;
+			}
+			.team-info p {
+				margin: 0;
+				line-height: 1.6;
+			}
+			@media screen and (max-width: 736px) {
+				.team-member {
+					flex-direction: column;
+					text-align: center;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -28,3 +63,62 @@
 					</nav>
 
 					<div id="main">
+							<section class="main">
+								<header class="major align-left">
+									<h2>Principal Investigator</h2>
+								</header>
+
+								<div class="team-member">
+									<img src="images/pic01.png" alt="Dr. Tanmoy Chakraborty" class="team-photo" loading="lazy" />
+									<div class="team-info">
+										<h3>Dr. Tanmoy Chakraborty</h3>
+										<p>Associate Professor</p>
+										<p>Light and Matter Physics Division, Raman Research Institute</p>
+										<p><a href="mailto:tanmoy@rri.res.in" style="color: #0033a0 !important; text-decoration: none; border-bottom: none;">tanmoy@rri.res.in</a></p>
+									</div>
+								</div>
+
+								<hr />
+
+								<header class="major align-left">
+									<h2>Researchers & Students</h2>
+								</header>
+								
+								<!-- TEAM MEMBER 1 -->
+								<div class="team-member">
+									<img src="images/placeholder.jpg" alt="Team Member Name" class="team-photo" loading="lazy" />
+									<div class="team-info">
+										<h3>Student Name</h3>
+										<p>Ph.D. Scholar</p>
+										<p>Brief description of their research focus or background.</p>
+									</div>
+								</div>
+
+								<!-- TEAM MEMBER 2 (Copy and paste this block for more members) -->
+								<div class="team-member">
+									<img src="images/placeholder.jpg" alt="Team Member Name" class="team-photo" loading="lazy" />
+									<div class="team-info">
+										<h3>Student Name</h3>
+										<p>Postdoctoral Researcher</p>
+										<p>Brief description of their research focus or background.</p>
+									</div>
+								</div>
+
+							</section>
+					</div>
+
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
