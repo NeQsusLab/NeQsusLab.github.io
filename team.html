@@ -4,7 +4,8 @@
 		<title>Team - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=7" />
+		<!-- Bumped version to v=8 to bypass cache -->
+		<link rel="stylesheet" href="assets/css/main.css?v=8" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.align-left { text-align: left !important; }
@@ -15,15 +16,17 @@
 				display: flex;
 				gap: 2em;
 				margin-bottom: 3em;
-				align-items: center;
+				align-items: flex-start; /* Aligns text to the top of the photo */
 			}
 			.team-photo {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				object-fit: cover;
+				width: 375px; /* 2.5 times bigger than the previous 150px */
+				height: auto; /* Maintains original aspect ratio without resizing or distorting */
+				max-width: 100%;
 				flex-shrink: 0;
-				border: 3px solid #0033a0; /* Optional: adds a nice blue ring around team photos */
+				/* Removed border-radius and object-fit so the photo is completely uncropped/unreshaped */
+			}
+			.team-info {
+				flex-grow: 1;
 			}
 			.team-info h3 {
 				margin-bottom: 0.2em;
@@ -31,13 +34,17 @@
 				border-bottom: none !important;
 			}
 			.team-info p {
-				margin: 0;
+				margin: 0 0 1em 0; /* Added slight bottom margin to separate paragraphs */
 				line-height: 1.6;
 			}
 			@media screen and (max-width: 736px) {
 				.team-member {
 					flex-direction: column;
 					text-align: center;
+					align-items: center;
+				}
+				.team-photo {
+					margin-bottom: 1em;
 				}
 			}
 		</style>
@@ -69,12 +76,19 @@
 								</header>
 
 								<div class="team-member">
-									<img src="images/pic01.png" alt="Dr. Tanmoy Chakraborty" class="team-photo" loading="lazy" />
+									<img src="images/Tanmoy.jpg" alt="Dr. Tanmoy Chakraborty" class="team-photo" loading="lazy" />
 									<div class="team-info">
 										<h3>Dr. Tanmoy Chakraborty</h3>
-										<p>Associate Professor</p>
-										<p>Light and Matter Physics Division, Raman Research Institute</p>
-										<p><a href="mailto:tanmoy@rri.res.in" style="color: #0033a0 !important; text-decoration: none; border-bottom: none;">tanmoy@rri.res.in</a></p>
+										<p>
+											Associate Professor<br />
+											Light and Matter Physics Division, Raman Research Institute
+										</p>
+										<p style="text-align: justify;">
+											Tanmoy Chakraborty earned his Ph.D. from IISER-Kolkata in 2015. He subsequently held postdoctoral positions at TU Dortmund (Germany), Stockholm University (Sweden), and Hasselt University (Belgium), specializing in nitrogen-vacancy centers and quantum control. In 2020, he joined QuTech in TU Delft, Netherlands focusing his research on frequency-multiplexed quantum repeaters and hybrid networks. Since January 2023, he has served as a Senior Scientist at A*STAR’s Quantum Innovation Centre, Singapore, where his research focuses on nonlinear interferometry-based quantum sensing and imaging. Subsequently he worked as an assistant professor in PRL Ahmedabad. Currently he is an associate professor in the Raman Research Institute, Bengaluru.
+										</p>
+										<p>
+											Email: <a href="mailto:tanmoy@rri.res.in" style="color: #0033a0 !important; text-decoration: none; border-bottom: none;">tanmoy@rri.res.in</a>
+										</p>
 									</div>
 								</div>
 
@@ -86,21 +100,21 @@
 								
 								<!-- TEAM MEMBER 1 -->
 								<div class="team-member">
-									<img src="images/placeholder.jpg" alt="Team Member Name" class="team-photo" loading="lazy" />
+									<img src="images/Profile.jpg" alt="This can be you" class="team-photo" loading="lazy" />
 									<div class="team-info">
-										<h3>Student Name</h3>
-										<p>Ph.D. Scholar</p>
-										<p>Brief description of their research focus or background.</p>
+										<h3>This can be you</h3>
+										<p>Research Assistant</p>
+										<p>Look into the <a href="opportunities.html" style="color: #0033a0 !important; text-decoration: none; border-bottom: 1px dotted #0033a0;">Opportunities</a> page for more details.</p>
 									</div>
 								</div>
 
-								<!-- TEAM MEMBER 2 (Copy and paste this block for more members) -->
+								<!-- TEAM MEMBER 2 -->
 								<div class="team-member">
-									<img src="images/placeholder.jpg" alt="Team Member Name" class="team-photo" loading="lazy" />
+									<img src="images/Profile.png" alt="This can be you" class="team-photo" loading="lazy" />
 									<div class="team-info">
-										<h3>Student Name</h3>
-										<p>Postdoctoral Researcher</p>
-										<p>Brief description of their research focus or background.</p>
+										<h3>This can be you</h3>
+										<p>Research Assistant</p>
+										<p>Look into the <a href="opportunities.html" style="color: #0033a0 !important; text-decoration: none; border-bottom: 1px dotted #0033a0;">Opportunities</a> page for more details.</p>
 									</div>
 								</div>
 
