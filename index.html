@@ -4,7 +4,8 @@
 		<title>About - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=6" />
+		<!-- Bumped version to v=7 to bypass cache -->
+		<link rel="stylesheet" href="assets/css/main.css?v=7" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.rri-block {
@@ -27,10 +28,10 @@
 				color: #8a2be2 !important;
 			}
 			
-			/* --- CUSTOM CIRCULAR ABOUT IMAGE (DOUBLED IN SIZE) --- */
+			/* --- CUSTOM CIRCULAR ABOUT IMAGE (70% of previous size) --- */
 			.spotlight .image.custom-profile-img {
-				width: 700px !important;  /* Doubled from 350px */
-				height: 700px !important; /* Doubled from 350px */
+				width: 490px !important;  /* Reduced to 70% of 700px */
+				height: 490px !important; 
 				border: none !important; 
 				background: transparent !important; 
 				box-shadow: none !important;
@@ -49,8 +50,8 @@
 
 			@media screen and (max-width: 980px) {
 				.spotlight .image.custom-profile-img {
-					width: 500px !important;  /* Doubled from 250px */
-					height: 500px !important; /* Doubled from 250px */
+					width: 350px !important;  /* Reduced to 70% of 500px */
+					height: 350px !important; 
 					margin: 2em auto !important; 
 					max-width: 90vw !important; /* Prevents it from breaking very small phone screens */
 					max-height: 90vw !important;
@@ -72,6 +73,7 @@
 	<body class="is-preload">
 
 			<div id="wrapper">
+					<!-- UPDATED HEADER WITH NEW TEXT -->
 					<header id="header" class="alt">
 						<h1 class="site-title">Quantum Network and Sensing</h1>
 					</header>
