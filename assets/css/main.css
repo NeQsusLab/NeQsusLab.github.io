@@ -4005,12 +4005,35 @@ body {
     }
 }
 
+/* --- 1. PURE WHITE BACKGROUND FOR CONTENT AREAS --- */
+#main, 
+#main > section.main, 
+#main > .main {
+    background-color: #ffffff !important;
+}
 
-/* --- GLOBAL FONT UPDATE (MATCHING BANNER) --- */
-body, 
-h1, h2, h3, h4, h5, h6, 
-p, a:not(.icon), li, dt, dd, 
-span:not(.icon):not(.image), 
-input, select, textarea {
+/* --- 2. FIX THIN FONT AND ENFORCE PROPER FONT FAMILY --- */
+/* This targets all regular text, making it a normal weight (400) instead of thin (300) */
+body, p, a:not(.icon):not(.button), li, dt, dd, span:not(.icon):not(.image) {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important; 
+    color: #333333 !important; /* Makes the text slightly darker and much easier to read */
+}
+
+/* This makes your headings thicker and bolder */
+h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 600 !important; 
+}
+
+/* --- 3. CENTER THE NAVIGATION TABS --- */
+#nav {
+    text-align: center !important;
+}
+#nav ul {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
 }
