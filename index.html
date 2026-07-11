@@ -4,8 +4,8 @@
 		<title>About - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Bumped version to v=7 to bypass cache -->
-		<link rel="stylesheet" href="assets/css/main.css?v=7" />
+		<!-- Bumped version to v=18 to bypass cache -->
+		<link rel="stylesheet" href="assets/css/main.css?v=18" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.rri-block {
@@ -28,9 +28,9 @@
 				color: #8a2be2 !important;
 			}
 			
-			/* --- CUSTOM CIRCULAR ABOUT IMAGE (70% of previous size) --- */
+			/* --- CUSTOM CIRCULAR ABOUT IMAGE --- */
 			.spotlight .image.custom-profile-img {
-				width: 490px !important;  /* Reduced to 70% of 700px */
+				width: 490px !important;  
 				height: 490px !important; 
 				border: none !important; 
 				background: transparent !important; 
@@ -39,7 +39,7 @@
 				border-radius: 50% !important; 
 				overflow: hidden !important;
 				margin: 0 0 0 3em !important; 
-				flex-shrink: 0 !important; /* Prevents the text from squishing the image */
+				flex-shrink: 0 !important; 
 			}
 			.spotlight .image.custom-profile-img img {
 				width: 100% !important;
@@ -50,10 +50,10 @@
 
 			@media screen and (max-width: 980px) {
 				.spotlight .image.custom-profile-img {
-					width: 350px !important;  /* Reduced to 70% of 500px */
+					width: 350px !important;  
 					height: 350px !important; 
 					margin: 2em auto !important; 
-					max-width: 90vw !important; /* Prevents it from breaking very small phone screens */
+					max-width: 90vw !important; 
 					max-height: 90vw !important;
 				}
 			}
@@ -73,7 +73,6 @@
 	<body class="is-preload">
 
 			<div id="wrapper">
-					<!-- UPDATED HEADER WITH NEW TEXT -->
 					<header id="header" class="alt">
 						<h1 class="site-title">Quantum Network and Sensing</h1>
 					</header>
@@ -98,7 +97,7 @@
 										</header>
 										<p>Quantum optics studies light at its fundamental limit. By isolating individual photons, 
 											we can harness quantum entanglement to drive new technologies in secure communication, computing, 
-											and sensing. Our research group utilizes these engineered photon states to advance quantum networks, 
+											and sensing. NeQsus Lab utilizes these engineered photon states to advance quantum networks, 
 											microscopy, and imaging.</p>
 									</div>
 									<span class="image custom-profile-img"><img src="images/pic01.png" alt="NeQsus Lab Cover" loading="lazy" /></span>
@@ -127,8 +126,8 @@
 											<h2 style="font-size: calc(1.75em - 2pt);">Contact us</h2>
 										</header>
 										<p style="margin-top: -1em; margin-bottom: 1.5em; line-height: 1.6;">
-											<strong>Dr. Tanmoy Chakraborty,</strong><br />
-											PI of Quantum Network and Sensing Lab,<br />
+											<!-- Applied the dark text color here to override the template's default bold color -->
+											<strong style="color: #333333;">Dr. Tanmoy Chakraborty,</strong><br />
 											Associate Professor,<br />
 											Light and Matter Physics Division,<br />
 											Raman Research Institute,
