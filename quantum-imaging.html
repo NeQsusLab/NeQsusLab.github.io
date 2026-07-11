@@ -4,60 +4,91 @@
 		<title>Research Theme - NeQsus Lab</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=15" />
+		<link rel="stylesheet" href="assets/css/main.css?v=17" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			.align-left { text-align: left !important; }
-			header.major.align-left::after { margin-left: 0 !important; }
-			
-			/* Custom Banner Image Styling */
-			.image.main {
-				margin: 0 0 3em 0;
-				padding: 0;
-				display: block;
-			}
-			.image.main img {
+			/* --- CUSTOM FULL-WIDTH BANNER --- */
+			.theme-banner {
+				position: relative;
 				width: 100%;
 				height: 400px;
-				object-fit: cover; 
-				border-radius: 4px 4px 0 0;
+				background-size: cover;
+				background-position: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 8px 8px 0 0; 
+				margin-bottom: 0;
 			}
+			
+			/* Dark overlay to make the white text pop */
+			.theme-banner::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(0, 0, 0, 0.55); 
+				border-radius: 8px 8px 0 0;
+			}
+			
+			/* Theme Title on the banner */
+			.theme-banner h1 {
+				position: relative;
+				color: #ffffff !important;
+				font-size: 2.5em;
+				font-weight: 600;
+				z-index: 1;
+				text-align: center;
+				padding: 0 1em;
+				margin: 0;
+			}
+
+			/* --- BACK TO RESEARCH BUTTON (SMALL BOX) --- */
+			.back-box {
+				display: inline-block;
+				background-color: #f4f4f4;
+				color: #0033a0 !important;
+				padding: 8px 16px;
+				margin-bottom: 2em;
+				border-radius: 4px;
+				text-decoration: none !important;
+				border: 1px solid #ddd;
+				font-size: 0.9em;
+				font-weight: 600;
+				transition: background-color 0.2s ease;
+			}
+			.back-box:hover {
+				background-color: #e9e9e9;
+			}
+
+			/* Clean up the main text area */
+			#main {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			
+			.align-left { text-align: left !important; }
+			
 			@media screen and (max-width: 736px) {
-				.image.main img { height: 200px; }
+				.theme-banner { height: 250px; }
+				.theme-banner h1 { font-size: 1.8em; }
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 
 			<div id="wrapper">
-					<header id="header" class="alt">
-						<h1 class="site-title">Quantum Network and Sensing</h1>
+			
+					<header class="theme-banner" style="background-image: url('images/Imaging_metrology.png');">
+						<h1>Quantum imaging and metrology</h1>
 					</header>
 
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">About</a></li>
-							<li><a href="research.html" class="active">Research</a></li>
-							<li><a href="publications.html">Publications</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="news.html">Updates</a></li>
-							<li><a href="opportunities.html">Opportunities</a></li>
-						</ul>
-					</nav>
-
 					<div id="main">
-							<!-- 1. CHANGE THIS IMAGE -->
-							<span class="image main"><img src="images/Imaging_metrology.png" alt="Theme Banner" /></span>
-
-							<section class="main">
-								<header class="major align-left">
-									<!-- 2. CHANGE THIS TITLE -->
-									<h2>Quantum imaging and metrology</h2>
-								</header>
+							<section class="main align-left">
 								
-								<!-- 3. CHANGE THIS TEXT -->
-								<p>
-									REPLACE WITH YOUR TEXT. You can add more paragraphs here to explain the project in detail!
+								<a href="research.html" class="back-box">← Back to Research</a>
+								
+								<p style="font-size: 1.1em; line-height: 1.8;">
+									REPLACE WITH YOUR TEXT. The tabs are gone, the background is white, and the focus is entirely on your research!
 								</p>
 								
 							</section>
